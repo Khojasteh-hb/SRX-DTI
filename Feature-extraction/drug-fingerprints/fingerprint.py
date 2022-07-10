@@ -13,7 +13,7 @@ def apply_getfinger(df_smile):
     return pd.Series(finger_list)
 
 # Read compound ID of drugs
-drug_smile = pd.read_csv('D:\my-projects\D-T prediction\Feature-extraction\drug-fingerprints\e_smile.csv')
+drug_smile = pd.read_csv('...\drug-fingerprints\E\e_smile.csv')
 
 # Remove unnamed columns
 drug_smile.rename({"Unnamed: 0": "redundant"}, axis="columns", inplace=True)
@@ -30,7 +30,7 @@ drug_finger['fingerprint'] = drug_finger.fingerprint_list.apply(lambda x: ', '.j
 df_finger = pd.DataFrame(drug_finger['fingerprint'].str.split(',', expand=True))
 #print(df_finger.head())
 
-df_finger.to_csv('D:\my-projects\D-T prediction\Feature-extraction\drug-fingerprints\e_fingerprint.csv', index=True)
+df_finger.to_csv('...\drug-fingerprints\E\e_fingerprint.csv', index=True)
 
 
 
