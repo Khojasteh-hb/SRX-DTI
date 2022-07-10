@@ -13,7 +13,7 @@ def apply_getPubchem(df_ID):
 
 
 # Read compound ID of drugs
-df_drug_ID = pd.read_csv('\E\e_drug_names.csv')
+df_drug_ID = pd.read_csv('...\drug-fingerprints\E\e_drug_names.csv')
 drug_ID = df_drug_ID['compound_ID']
 
 cid_list = apply_getPubchem(drug_ID)
@@ -28,7 +28,7 @@ drug_smile = pd.DataFrame(drug_smile, columns=['smile'])
 df_smile = pd.concat([drug_ID, drug_smile], axis=1, sort=False)
 
 
-df_smile.to_csv('\E\e_smile.csv', index=True)
+df_smile.to_csv('...\drug-fingerprints\E\e_smile.csv', index=True)
 
 
 
