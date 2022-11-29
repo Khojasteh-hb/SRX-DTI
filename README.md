@@ -5,6 +5,8 @@ Predicting drug-target interaction (DTI) is an important research area in the fi
 
 ![image](https://user-images.githubusercontent.com/72028345/204578716-30f41a3e-0f22-4881-82dc-f0af97e1eb52.png)
 
+## About data
+In this research, four golden standard datasets, including enzymes (EN), G-protein-coupled receptors (GPCR), ion channel (IC), and nuclear receptors (NR) released by [Yamanishi et al](http://web.kuicr.kyoto-u.ac.jp/supp/yoshi/drugtarget/).  All these datasets are freely available from [http://web.kuicr.kyoto-u.ac.jp/supp/yoshi/drugtarget/](http://web.kuicr.kyoto-u.ac.jp/supp/yoshi/drugtarget/). 
 
 ## Environment Settings
 - Python version:  '3.9' or higher
