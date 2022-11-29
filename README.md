@@ -11,8 +11,10 @@ Predicting drug-target interaction (DTI) is an important research area in the fi
 
 - You have to install the required libraries
 
-
-## To run the code 
+## To run the code
+- Run ./feature extraction/00-AAC.py: extract AAC descriptor (for other descriptors, just change to related python code).  
+- Run ./NR-run/run.py: make balanced dataset, and feature selection.
+- Run ./DTI prediction/DTI_predictor.py: predict drug-target interactions, and evaluate the results with five cross-validation.
 
 # Citation
 If you use our source code, dataset, and experiments for your research or development, please cite the following paper:
