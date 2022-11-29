@@ -14,6 +14,8 @@ Predicting drug-target interaction (DTI) is an important research area in the fi
 
 ## To run the code 
 
+# Citation
+If you use our source code, dataset, and experiments for your research or development, please cite the following paper:
 
 # Contact
 If you have any questions, do not hesitate to contact me by `khojasteh@znu.ac.ir` or `khojasteh.hb@gmail.com`, I will be happy to assist.
