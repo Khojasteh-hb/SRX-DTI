@@ -6,5 +6,14 @@ Predicting drug-target interaction (DTI) is an important research area in the fi
 ![image](https://user-images.githubusercontent.com/72028345/204578716-30f41a3e-0f22-4881-82dc-f0af97e1eb52.png)
 
 
+## Environment Settings
+- Python version:  '3.9' or higher
+
+- You have to install the required libraries
+
+
+## To run the code 
+
+
 # Contact
 If you have any questions, do not hesitate to contact me by `khojasteh@znu.ac.ir` or `khojasteh.hb@gmail.com`, I will be happy to assist.
