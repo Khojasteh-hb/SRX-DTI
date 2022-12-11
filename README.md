@@ -19,8 +19,7 @@ In this research, four golden standard datasets, including enzymes (EN), G-prote
 - Run ./DTI prediction/DTI_predictor.py: predict drug-target interactions, and evaluate the results with five cross-validation.
 
 # Citation
-If you use our source code, dataset, and experiments for your research or development, please cite the following paper:
-
+If you use our source code, dataset, and experiments for your research or development, please cite the following paper: 
 [Improving prediction of drug-target interactions based on fusing multiple features with data balancing and feature selection techniques. Hakimeh Khojasteh, Jamshid Pirgazi. bioRxiv 2022.12.07.519302; doi: https://doi.org/10.1101/2022.12.07.519302](https://www.biorxiv.org/content/10.1101/2022.12.07.519302v1)
 
 # Contact
