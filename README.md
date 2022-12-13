@@ -1,7 +1,7 @@
 ## SRX-DTI
 
 Predicting drug-target interactions based on fusing multiple features with data balancing and feature selection techniques
-Predicting drug-target interaction (DTI) is an important research area in the field of drug discovery.  This framework proposes a novel drug–target interaction prediction method called SRX-DTI. First, we extract various descriptors from the protein sequences; and the drug is encoded as an FP2 molecular fingerprint. For handling the class imbalance problem, we propose the One-SVM-US technique to deal with imbalanced data. We also develop the FFS-RF algorithm removes the irrelevant features to obtain the best optimal features. Finally, the balanced dataset with optimal features is given to the XGBoost classifier to identify DTIs. 
+Predicting drug-target interaction (DTI) is an important research area in the field of drug discovery.  This framework proposes a novel drug–target interaction prediction method called SRX-DTI. First, we extract various descriptors from the protein sequences; and the drug is encoded as an FP2 molecular fingerprint. Besides, we present the One-SVM-US technique to deal with imbalanced data. We also develop the FFS-RF algorithm removes the irrelevant features to obtain the best optimal features. Finally, the balanced dataset with optimal features is given to the XGBoost classifier to identify DTIs. 
 
 ![image](https://user-images.githubusercontent.com/72028345/204578716-30f41a3e-0f22-4881-82dc-f0af97e1eb52.png)
 
