@@ -21,7 +21,7 @@ In this research, four golden standard datasets, including enzymes (EN), G-prote
 # Citation
 If you use our source code, dataset, and experiments for your research or development, please cite our paper:
 Khojasteh, H., Pirgazi, J. (2022). Improving prediction of drug-target interactions based on fusing multiple features with data balancing and feature selection techniques. bioRxiv 2022.12.07.519302.
-https://www.biorxiv.org/content/10.1101/2022.12.07.519302v1
+https://www.biorxiv.org/content/10.1101/2022.12.07.519302v2
 
 # Contact
 If you have any questions, do not hesitate to contact me by `khojasteh@znu.ac.ir` or `khojasteh.hb@gmail.com`, I will be happy to assist.
