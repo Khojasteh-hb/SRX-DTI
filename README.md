@@ -14,14 +14,14 @@ In this research, four golden standard datasets, including enzymes (EN), G-prote
 - You have to install the required libraries
 
 ## To run the code
-- Run ./feature extraction/00-AAC.py: extract AAC descriptor (for other descriptors, just change to related python code).  
-- Run ./NR-run/run.py: make balanced dataset, and feature selection.
-- Run ./DTI prediction/DTI_predictor.py: predict drug-target interactions, and evaluate the results with five cross-validation.
+- Run ./feature extraction/00-AAC.py: extract AAC descriptor (for other descriptors, just change to related Python code).  
+- Run ./NR-run/run.py: make a balanced dataset and feature selection.
+- Run ./DTI prediction/DTI_predictor.py: predict drug-target interactions, and evaluate the results with five cross-validations.
 
 # Citation
 If you use our source code, dataset, and experiments for your research or development, please cite our paper:
-Khojasteh, H., Pirgazi, J. (2022). Improving prediction of drug-target interactions based on fusing multiple features with data balancing and feature selection techniques. bioRxiv 2022.12.07.519302.
-https://www.biorxiv.org/content/10.1101/2022.12.07.519302v2
+Khojasteh, H., Pirgazi, J., & Ghanbari Sorkhi, A. (2023). Improving prediction of drug-target interactions based on fusing multiple features with data balancing and feature selection techniques. Plos one, 18(8), e0288173.
+[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288173]
 
 # Contact
 If you have any questions, do not hesitate to contact me by `khojasteh@znu.ac.ir` or `khojasteh.hb@gmail.com`, I will be happy to assist.
