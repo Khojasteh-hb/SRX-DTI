@@ -1,26 +1,103 @@
-## SRX-DTI
+# SRX-DTI
 
-Predicting drug-target interaction (DTI) is an important research area in the field of drug discovery.  This framework proposes a novel drug–target interaction prediction method called SRX-DTI. First, we extract various descriptors from the protein sequences, and the drug is encoded as an FP2 molecular fingerprint. Besides, we present the One-SVM-US technique to deal with imbalanced data. We also developed the FFS-RF algorithm to remove the irrelevant features to obtain the optimal features. Finally, the balanced dataset with optimal features is given to the XGBoost classifier to identify DTIs. 
+SRX-DTI is a machine learning framework for predicting Drug–Target Interactions (DTIs).  
+This method integrates multiple protein sequence descriptors, molecular fingerprints, data balancing strategies, feature selection techniques, and gradient boosting to improve DTI prediction performance.
 
-![image](https://user-images.githubusercontent.com/72028345/204578716-30f41a3e-0f22-4881-82dc-f0af97e1eb52.png)
+---
 
-## About data
-In this research, four golden standard datasets, including enzymes (EN), G-protein-coupled receptors (GPCR), ion channel (IC), and nuclear receptors (NR) released by [Yamanishi et al](http://web.kuicr.kyoto-u.ac.jp/supp/yoshi/drugtarget/).  All these datasets are freely available from [http://web.kuicr.kyoto-u.ac.jp/supp/yoshi/drugtarget/](http://web.kuicr.kyoto-u.ac.jp/supp/yoshi/drugtarget/). 
+## Method Overview
 
-## Environment Settings
-- Python version:  '3.9' or higher
+The SRX-DTI framework consists of the following stages:
 
-- You have to install the required libraries
+1. **Feature Extraction**
+   - Protein sequence descriptors (e.g., AAC and others)
+   - Drug encoding using FP2 molecular fingerprints
 
-## To run the code
-- Run ./feature extraction/00-AAC.py: extract AAC descriptor (for other descriptors, just change to related Python code).  
-- Run ./NR-run/run.py: make a balanced dataset and feature selection.
-- Run ./DTI prediction/DTI_predictor.py: predict drug-target interactions, and evaluate the results with five cross-validations.
+2. **Handling Imbalanced Data**
+   - Proposed **One-SVM-US** technique for data balancing
 
-# Citation
-If you use our source code, dataset, and experiments for your research or development, please cite our paper:
-Khojasteh, H., Pirgazi, J., & Ghanbari Sorkhi, A. (2023). Improving prediction of drug-target interactions based on fusing multiple features with data balancing and feature selection techniques. Plos one, 18(8), e0288173.
-[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288173]
+3. **Feature Selection**
+   - Proposed **FFS-RF** algorithm to remove irrelevant features
+   - Selection of optimal feature subset
 
-# Contact
-If you have any questions, do not hesitate to contact me at `khojasteh.hb@gmail.com`, I will be happy to assist.
+4. **Classification**
+   - Final balanced dataset is trained using **XGBoost**
+   - Performance evaluated using five-fold cross-validation
+
+---
+
+## Datasets
+
+This study uses four benchmark (gold standard) datasets released by Yamanishi et al.:
+
+- Enzymes (EN)
+- G-protein-coupled receptors (GPCR)
+- Ion Channels (IC)
+- Nuclear Receptors (NR)
+
+Datasets are publicly available at:  
+http://web.kuicr.kyoto-u.ac.jp/supp/yoshi/drugtarget/
+
+---
+
+## Framework Architecture
+
+![SRX-DTI Framework](https://user-images.githubusercontent.com/72028345/204578716-30f41a3e-0f22-4881-82dc-f0af97e1eb52.png)
+
+---
+
+## Environment
+
+- Python 3.9 or higher
+- Required Python libraries (see project dependencies)
+
+---
+
+## How to Run
+
+1️⃣ Feature extraction  
+```
+./feature extraction/00-AAC.py
+```
+(For other descriptors, modify the corresponding script.)
+
+2️⃣ Data balancing and feature selection  
+```
+./NR-run/run.py
+```
+
+3️⃣ DTI prediction and evaluation  
+```
+./DTI prediction/DTI_predictor.py
+```
+
+---
+
+## Published Paper
+
+Full methodological details are available in our published paper:
+
+Khojasteh, H., Pirgazi, J., & Ghanbari Sorkhi, A. (2023).  
+**Improving prediction of drug-target interactions based on fusing multiple features with data balancing and feature selection techniques.**  
+PLOS ONE, 18(8), e0288173.
+
+🔗 https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288173
+
+---
+
+## Contact
+
+Hakimeh Khojasteh  
+khojasteh.hb@gmail.com  
+
+---
+
+## Citation
+
+If you use this code in your research, please cite:
+
+```
+Khojasteh, H., Pirgazi, J., & Ghanbari Sorkhi, A. (2023).
+Improving prediction of drug-target interactions based on fusing multiple features with data balancing and feature selection techniques.
+PLOS ONE, 18(8), e0288173.
+```
